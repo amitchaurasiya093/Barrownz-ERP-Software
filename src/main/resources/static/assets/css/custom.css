@@ -1,0 +1,559 @@
+/* ---------------------------------------- */
+/* ADMIN PAGE TOGGLE BUTTON CSS START HERE */
+/* -------------------------------------- */
+
+.toggle-btn {
+  padding-inline: 15px;
+  padding-block: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: #28a745; /* Default green (System In) */
+  transition: 0.4s ease;
+  width: 120px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.toggle-btn.out {
+  background-color: #dc3545; /* Red (System Out) */
+}
+
+/* css styling for alert for system in/out alert starts */
+.custom-alert {
+  position: fixed;
+  top: 50px;
+  right: 100px;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+.custom-alert.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Green for System In */
+.custom-alert.success {
+  background-color: #28a745;
+}
+
+/* Red for System Out */
+.custom-alert.error {
+  background-color: #dc3545;
+}
+/* css styling for alert for system in/out alert ends */
+
+
+/* -------------------------------------- */
+/* ADMIN PAGE TOGGLE BUTTON CSS END HERE */
+/* ------------------------------------- */
+
+/* ----------------------------------------------- */
+/* ALL PAGE CARD HEADING TITLE STYLING START HERE */
+/* --------------------------------------------- */
+
+.typing-text {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(26, end) forwards;
+  font-family: 'cambria';
+  font-weight: bold;
+
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 26ch
+  }
+}
+
+/* ----------------------------------------------- */
+/* ALL PAGE CARD HEADING TITLE STYLING START HERE */
+/* --------------------------------------------- */
+
+/* body,
+* {
+  cursor: none;
+}
+
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: blue;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border: 2px solid blue;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, border 0.2s ease;
+}
+
+a:hover~.cursor-outline,
+button:hover~.cursor-outline,
+h1:hover~.cursor-outline,
+p:hover~.cursor-outline {
+  width: 50px;
+  height: 50px;
+  border-color: blue
+} */
+
+/* ------------------------------------- */
+/* Edit and Delete Icons CSS START HERE */
+/* ----------------------------------- */
+
+i.fa-solid {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+i.fa-solid:hover {
+  opacity: 0.8;
+}
+
+.edit-btn {
+
+  color: yellow;
+}
+
+/* .delete-btn {
+
+  color: red;
+} */
+
+/* ---------------------------------- */
+/* Edit and Delete Icons CSS END HERE */
+/* ---------------------------------- */
+
+/* ------------------------------------- */
+/* Edit And Delete Model CSS START HERE */
+/* ----------------------------------- */
+
+.edit-model {
+
+  border-radius: 15px !important;
+}
+
+.delete-model {
+
+  border-radius: 15px !important;
+}
+
+.modal-content {
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-header h5 {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.form-check-label {
+  font-weight: 500;
+}
+
+table input[type="time"] {
+  min-width: 120px;
+}
+
+.modal-dialog-scrollable .modal-content {
+  max-height: 90vh;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.modal-dialog-scrollable .modal-body {
+  overflow-y: auto;
+  max-height: 70vh;
+  padding-right: 1rem;
+}
+
+/* ----------------------------------- */
+/* Edit And Delete Model CSS END HERE */
+/* --------------------------------- */
+
+/* ------------------------------------ */
+/* Shift Page Scroll Bar CSS Start Here */
+/* ------------------------------------ */
+
+.table-scroll-container {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.scroll-buttons-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 0 20px;
+}
+
+.scroll-btn {
+  background-color: #3A57EB;
+  color: white;
+  border: none;
+  border-radius: 30%;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ----------------------------------- */
+/* Shift Page Scroll Bar CSS End Here */
+/* --------------------------------- */
+
+/* ----------------------------------------- */
+/* Leave-Type Page Alert Bar CSS Start Here */
+/* --------------------------------------- */
+
+#alertPlaceholder {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: auto;
+  max-width: 500px;
+}
+
+
+#alert-placeholder{
+
+   position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: auto;
+  max-width: 500px;
+
+}
+
+/* --------------------------------------- */
+/* Leave-Type Page Alert Bar CSS End Here */
+/* ------------------------------------- */
+
+
+#rate-per-hour, #calcultion {
+  transition: all 0.3s ease;
+}
+
+
+.custom-team-btn {
+    background-color: #3A57EB !important;
+    color: #fff !important;
+    border: none;
+  }
+
+  .custom-team-btn:hover {
+    background-color: #2f47cc !important;
+  }
+
+  .dropdown-menu {
+    border: 1px solid #3A57EB;
+  }
+
+  
+  .profit-highlight {
+    box-shadow: 0 0 5px 2px #28a745; /* green shadow */
+    transition: box-shadow 0.3s ease;
+  }
+
+
+/* Error message styling */
+/* .is-invalid {
+  border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #dc3545;
+  display: block;
+} */
+
+/* .has-error .form-control {
+  border-color: #dc3545;
+}
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+} */
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875em;
+  margin-top: 0.25rem;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+/* ---------------------------- */
+/* Sign in page css start here */
+/* -------------------------- */
+ 
+#loginCard {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(253, 252, 252, 0.842);
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+ 
+@keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+ 
+.form-control-1 {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+ 
+.form-control-1::placeholder {
+  color: #e0e0e0;
+}
+ 
+.form-control-1:focus {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-color: #ffffff;
+  box-shadow: none;
+}
+ 
+#loginCard h2,
+#loginCard p,
+#loginCard label {
+  color: #fff;
+}
+ 
+.btn-primary {
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+ 
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+ 
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+ 
+#logoSection img {
+  height: 40px;
+  width: 40px;
+}
+ 
+#logoTitle {
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+}
+ 
+a {
+  text-decoration: none;
+}
+ 
+.glass-bg {
+  background: rgba(255, 255, 255, 0.05);
+  height: 100vh;
+}
+ 
+.forgot-link {
+  color: #fff;
+}
+ 
+/* .form-check-label {
+  color: #fff;
+} */
+ 
+ 
+#login-e-code-error {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* employee- apply leave styling starts */
+.tab-button, .tab-button-2 {
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  color: black;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.tab-button.active,
+.tab-button-2.active {
+  background-color: #3A57EB;
+  color: white;
+}
+
+.tab-content-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+
+.nav-tabs {
+margin-bottom: 0 !important;
+padding-bottom: 0 !important;
+}
+
+.nav-tabs .nav-item {
+margin: 0 !important;
+padding: 0 !important;
+}
+
+.nav-tabs .nav-link {
+font-size: 14px;
+padding: 6px 12px;
+margin-bottom: 0 !important;
+border-radius: 0;
+border: none;
+color: #3A57EB;
+}
+
+.nav-tabs .nav-link.active {
+background-color: #3A57EB;
+font-weight: bold;
+color: #ffffff !important;
+border-radius: 10px;
+}
+
+
+
+    
+
+
+/* ------------------------------- */
+/* Employee Profile Nav Image CSS */
+/* ----------------------------- */
+
+#navbarEmpImage {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+/* css styling for displaying birthday in employee panel */
+/* .birthday-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.birthday-marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
+  font-weight: bold;
+  color: #856404;
+}
+
+@keyframes scroll-left {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+} */
+
+
+
+.ccbtn {
+    color: white;
+    background-color: #3A57E8;
+    border: none;
+}
+
+/* personal info button css styling starts */
+.info-btn {
+  color: white;
+  background-color: #3A57E8;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+}
+
+.info-btn-cancel {
+   color: white;
+   background-color: #dc3545;
+   border: none;
+   padding: 8px 14px;
+   border-radius: 5px;
+}
+
+.btn-main-setting {
+     border-radius: 50px;
+     padding: 10px 30px;
+     background-color: #3A57E8;
+     color: white;
+}
+
+.btn-custom {
+   background-color: #3A57E8;
+   color: #fff;
+   border: none;
+   padding: 5px 8px;
+   border-radius: 2px;
+}
